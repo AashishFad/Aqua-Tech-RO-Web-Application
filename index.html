@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQUA TECH RO - SALES & SERVICE</title>
+  <meta name="description" content="Shop RO, UV, UF water purifiers. Browse our full range of RO water purifiers sorted by price. Enquire online.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <div class="nav-logo" onclick="showPage('home')">
+ 
+    <div class="nav-logo-icon">
+      <img src="images/logo.png" alt="Aqua-Tech-RO">
+</div>
+    <div>
+      <div class="nav-logo-text">AQUA TECH RO</div>
+      <div class="nav-logo-sub">SALES & SERVICE</div>
+    
+    </div>
+  </div>
+  <div class="nav-links">
+    <a onclick="showPage('home')" class="active" id="nav-home">Home</a>
+    <a onclick="showPage('products')" id="nav-products">Products</a>
+    <a onclick="showPage('by-price')" id="nav-by-price">By Price</a>
+    <a onclick="showPage('service')" id="nav-service">Service &amp; AMC</a>
+    <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+  </div>
+  <button class="nav-mobile-btn" onclick="toggleMobileMenu()">☰</button>
+</nav>
+
+<div class="nav-mobile-menu" id="mobile-menu">
+  <a onclick="showPage('home');toggleMobileMenu()">🏠 Home</a>
+  <a onclick="showPage('products');toggleMobileMenu()">💧 Products</a>
+  <a onclick="showPage('by-price');toggleMobileMenu()">💰 By Price</a>
+  <a onclick="showPage('service');toggleMobileMenu()">🔧 Service &amp; AMC</a>
+  <a onclick="showPage('contact');toggleMobileMenu()">📞 Contact</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ HOME PAGE ═══════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+
+  
+    <div class="hero-badge">✦ Quality RO Water Purifiers</div>
+    <h1>Pure Water for<br><span>Every Home</span></h1>
+    <p>Contact For All Type Of RO Water Filter Machine.</p>
+    <div class="hero-btns">
+      <button class="btn btn-primary" onclick="showPage('products')">🔍 Explore Products</button>
+      <a class="btn btn-green" href="https://wa.me/8866338111?text=Hi%20Aqua%20RO%20Tech!%20I%20need%20help." target="_blank">💬 Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">⭐ Best Sellers</div>
+        <h2>Our Most Popular RO Models</h2>
+        <p>Engineered for Indian water conditions — borewell, municipal, or tanker water.</p>
+      </div>
+      <div class="products-grid" id="home-products"></div>
+      <div style="text-align:center;margin-top:2rem">
+        <button class="btn btn-primary" onclick="showPage('products')">View All Products →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">⭐ Reviews</div>
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid" id="home-reviews"></div>
+    </div>
+  </section>
+
+  <!-- Quick Enquiry CTA -->
+  <section class="section" style="background:linear-gradient(135deg,var(--blue-100),var(--blue-50));text-align:center;">
+    <div class="container">
+      <h2 style="color:var(--blue-700);font-size:2rem;margin-bottom:1rem;">Interested in Our Products?</h2>
+      <p style="color:var(--gray-500);margin-bottom:2rem;font-size:1.05rem;">Chat with us on WhatsApp for quick queries, pricing, and support.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a class="btn btn-green" href="https://wa.me/8866338111?text=Hi%20Aqua%20RO%20Tech!%20I%20am%20interested%20in%20your%20RO%20water%20purifiers." target="_blank">💬 Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #page-home -->
+
+
+<!-- ══════════════════════════════════════════ PRODUCTS PAGE ═════════════════ -->
+<div id="page-products" class="page">
+  <div class="breadcrumb">
+    <a onclick="showPage('home')">Home</a> › <span>Products</span>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">💧 All Models</div>
+        <h2>Complete RO Water Purifier Range</h2>
+        <p>Find the perfect purifier for your home — from budget to premium.</p>
+      </div>
+      <div class="filter-bar">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search products..." id="product-search" oninput="filterProducts()">
+        </div>
+        <select class="filter-select" id="filter-tech" onchange="filterProducts()">
+          <option value="">All Technology</option>
+          <option value="RO">RO</option>
+          <option value="RO+UV">RO+UV</option>
+          <option value="RO+UV+UF">RO+UV+UF</option>
+          <option value="RO+UV+Copper">RO+UV+Copper</option>
+          <option value="RO+UV+Copper+Zinc">RO+UV+Copper+Zinc</option>
+          <option value="RO+UV+Copper+Zinc+TDS">RO+UV+Copper+Zinc+TDS</option>
+        </select>
+        <select class="filter-select" id="filter-capacity" onchange="filterProducts()">
+          <option value="">All Capacity</option>
+          <option value="7L">7 Litres</option>
+          <option value="10L">10 Litres</option>
+          <option value="15L">15 Litres</option>
+        </select>
+        <select class="filter-select" id="sort-by" onchange="filterProducts()">
+          <option value="">Sort By</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="popular">Popularity</option>
+        </select>
+      </div>
+     
+      <div class="products-grid" id="all-products-grid"></div>
+      <div id="no-results" style="display:none;text-align:center;padding:3rem;color:var(--gray-400);">
+        <div style="font-size:3rem;margin-bottom:1rem;">🔍</div>
+        <p>No products found. Try different filters.</p>
+      </div>
+    </div>
+  </section>
+</div><!-- end #page-products -->
+
+
+<!-- ══════════════════════════════════════════ BY PRICE PAGE ═════════════════ -->
+<div id="page-by-price" class="page">
+  <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › <span>Products by Price</span></div>
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">💰 By Budget</div>
+        <h2>Shop by Your Budget</h2>
+        <p>We have options for every budget — from affordable to premium.</p>
+      </div>
+      <div id="price-range-sections"></div>
+    </div>
+  </section>
+</div><!-- end #page-by-price -->
+
+
+<!-- ════════════════════════════════════ PRODUCT DETAIL PAGE ════════════════ -->
+<div id="page-detail" class="page">
+  <div class="breadcrumb">
+    <a onclick="showPage('home')">Home</a> › <a onclick="showPage('products')">Products</a> › <span id="detail-breadcrumb">Product</span>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="product-detail-grid" id="product-detail-content"></div>
+      <div style="margin-top:3rem;">
+        <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:1.5rem;">Customer Reviews</h3>
+        <div id="detail-reviews"></div>
+      </div>
+    </div>
+  </section>
+</div><!-- end #page-detail -->
+
+
+<!-- ══════════════════════════════════════════ COMPARE PAGE ════════════════ -->
+<div id="page-compare" class="page">
+  <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › <span>Compare Products</span></div>
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">⚖️ Compare</div>
+        <h2>Product Comparison</h2>
+        <p>Compare up to 3 products side-by-side to find the best fit for you.</p>
+      </div>
+      <div class="compare-table-wrap" id="compare-table-wrap"></div>
+      <div style="text-align:center;margin-top:2rem;">
+        <button class="btn btn-outline" onclick="showPage('products')">← Back to Products</button>
+      </div>
+    </div>
+  </section>
+</div><!-- end #page-compare -->
+
+
+<!-- ══════════════════════════════════════ SERVICE PAGE ═════════════════════ -->
+<div id="page-service" class="page">
+  <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › <span>Service &amp; AMC</span></div>
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">🔧 Service</div>
+        <h2>Service &amp; Annual Maintenance</h2>
+        <p>Professional service by AQUA TECH RO technicians — fast, reliable, guaranteed.</p>
+      </div>
+   
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon">🔩</div><div class="service-title">RO Installation</div><div class="service-desc">Professional installation at your home. Includes demo, testing &amp; documentation.</div><div class="service-price">₹499 / visit</div></div>
+        <div class="service-card"><div class="service-icon">🔧</div><div class="service-title">General Maintenance</div><div class="service-desc">Complete check-up, cleaning, and performance optimization of your RO unit.</div><div class="service-price">₹299 / visit</div></div>
+        <div class="service-card"><div class="service-icon">🧪</div><div class="service-title">Filter Replacement</div><div class="service-desc">Genuine AQUA TECH RO filters replaced by trained technicians with quality guarantee.</div><div class="service-price">₹150 / filter</div></div>
+        <div class="service-card"><div class="service-icon">📋</div><div class="service-title">AMC - Basic</div><div class="service-desc">2 service visits/year + filter replacement + priority support. 12-month plan.</div><div class="service-price">₹1,499 / year</div></div>
+        <div class="service-card"><div class="service-icon">⭐</div><div class="service-title">AMC - Premium</div><div class="service-desc">4 visits/year + all filter replacements + emergency service + TDS monitoring.</div><div class="service-price">₹2,499 / year</div></div>
+        <div class="service-card"><div class="service-icon">🚨</div><div class="service-title">Emergency Service</div><div class="service-desc">Same-day emergency visit for critical issues. Available 7 days a week.</div><div class="service-price">₹599 / visit</div></div>
+      </div>
+    </div>
+  </section>
+</div><!-- end #page-service -->
+
+
+<!-- ══════════════════════════════════════ CONTACT PAGE ══════════════════════ -->
+<div id="page-contact" class="page">
+  <div class="breadcrumb"><a onclick="showPage('home')">Home</a> › <span>Contact Us</span></div>
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <div class="badge-tag">📞 Get in Touch</div>
+        <h2>Contact Us</h2>
+        <p>We'd love to help you find the right RO solution. Reach us anytime.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-card">
+            <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-item-label">Phone</div><div class="contact-item-value">8866338111</div></div></div>
+            <div class="contact-item"><div class="contact-icon">💬</div><div><div class="contact-item-label">WhatsApp</div><div class="contact-item-value">8866338111</div></div></div>
+            <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-item-label">Email</div><div class="contact-item-value">sdfad009900@gmail.com</div></div></div>
+          </div>
+          <div style="margin-top:1rem;">
+            <a class="btn btn-green" style="width:100%;justify-content:center;" href="https://wa.me/8866338111?text=Hi%20AQUA TECH RO%2C%20I%20need%20help%20with%20my%20water%20purifier." target="_blank">💬 Chat on WhatsApp</a>
+          </div>
+       
+          <div style="background:var(--gray-100);border-radius:var(--radius-lg);margin-top:1rem;height:180px;display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:0.85rem;text-align:center;">
+            📍 Google Maps Embed<br><small>Paste your &lt;iframe&gt; embed code here</small>
+          </div>
+        </div>
+        <div>
+          <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-xl);padding:2rem;">
+            <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:1.5rem;">Send Us an Enquiry</h3>
+            <form onsubmit="submitEnquiry(event,'contact-success')" id="contact-form">
+              <div class="form-grid">
+                <div class="form-group"><label class="form-label">Full Name *</label><input type="text" class="form-input" id="c-name" placeholder="Your full name" required></div>
+                <div class="form-group"><label class="form-label">Phone *</label><input type="tel" class="form-input" id="c-phone" placeholder="9XXXXXXXXX" required></div>
+                <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="c-email" placeholder="your@email.com"></div>
+                <div class="form-group"><label class="form-label">City</label><input type="text" class="form-input" id="c-city" placeholder="Your city"></div>
+                <div class="form-group full"><label class="form-label">Interested Product</label>
+                  <select class="form-input form-select" id="c-product">
+                    <option value="">Select a product (optional)</option>
+                  </select>
+                </div>
+                <div class="form-group full"><label class="form-label">Message</label><textarea class="form-input form-textarea" id="c-message" placeholder="Tell us what you need..."></textarea></div>
+              </div>
+              <button type="submit" class="form-submit">📤 Send Enquiry</button>
+              <div class="form-success" id="contact-success">✅ Enquiry submitted! Our team will call you within 24 hours.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- end #page-contact -->
+
+
+<!-- ═══ COMPARE BAR (Fixed Bottom) ═══ -->
+<div class="compare-bar" id="compare-bar">
+  <div>
+    <div style="font-size:0.8rem;opacity:0.7;margin-bottom:4px;">Compare Products (max 3)</div>
+    <div class="compare-items" id="compare-items-bar"></div>
+  </div>
+  <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+    <button class="btn btn-white btn-sm" onclick="goCompare()">⚖️ Compare Now</button>
+    <button class="btn btn-outline-white btn-sm" onclick="clearCompare()">Clear</button>
+  </div>
+</div>
+
+<!-- ═══ WHATSAPP FLOAT BUTTON ═══ -->
+<a class="whatsapp-float" href="https://wa.me/8866338111?text=Hi%20Aqua%20RO%20Tech!%20I%20need%20help." target="_blank" title="Chat on WhatsApp">💬</a>
+
+<!-- ═══ ENQUIRY MODAL ═══ -->
+<div id="enquiry-modal" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.55);align-items:center;justify-content:center;padding:1rem;">
+  <div style="background:#fff;border-radius:var(--radius-xl);padding:2rem;max-width:520px;width:100%;max-height:90vh;overflow-y:auto;position:relative;">
+    <button onclick="closeEnquiry()" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--gray-400);">✕</button>
+    <h3 style="font-size:1.25rem;font-weight:800;margin-bottom:0.5rem;">📋 Quick Enquiry</h3>
+    <p style="font-size:0.85rem;color:var(--gray-500);margin-bottom:1.5rem;">Our team will call you within 2 hours.</p>
+    <form onsubmit="submitEnquiry(event,'modal-success')" id="modal-form">
+      <div class="form-grid">
+        <div class="form-group"><label class="form-label">Full Name *</label><input type="text" class="form-input" id="m-name" required></div>
+        <div class="form-group"><label class="form-label">Phone *</label><input type="tel" class="form-input" id="m-phone" required></div>
+        <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" id="m-email"></div>
+        <div class="form-group"><label class="form-label">City</label><input type="text" class="form-input" id="m-city"></div>
+        <div class="form-group full"><label class="form-label">Interested Product</label>
+          <select class="form-input form-select" id="m-product">
+            <option value="">Select product (optional)</option>
+          </select>
+        </div>
+        <div class="form-group full"><label class="form-label">Message</label><textarea class="form-input form-textarea" style="min-height:80px" id="m-message"></textarea></div>
+      </div>
+      <button type="submit" class="form-submit">📤 Submit Enquiry</button>
+      <div class="form-success" id="modal-success">✅ Done! We'll call you within 2 hours.</div>
+    </form>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="margin-bottom:0.75rem;">
+        
+         <div class="nav-logo-icon2">
+           <img src="images/logo.png" alt="Aqua-Tech-RO">
+</div>
+        <div>
+          <div class="nav-logo-text" style="color:#fff;">AQUA TECH RO</div>
+          <div class="nav-logo-sub" style="color:rgba(255,255,255,0.5);">SALES &amp; SERVICE</div>
+        </div>
+      </div>
+      <p>Quality RO water purifiers for homes and offices. Browse our full range and enquire online.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <a onclick="showPage('products')">All Models</a>
+      <a onclick="showPage('by-price')">Under 10000</a>
+      <a onclick="showPage('by-price')">₹5K – ₹10K</a>
+      <a onclick="showPage('by-price')">Premium Range</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a onclick="showPage('service')">Installation</a>
+      <a onclick="showPage('service')">AMC Plans</a>
+      <a onclick="showPage('service')">Filter Replacement</a>
+      <a onclick="showPage('service')">Emergency Service</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:8866338111">8866338111</a>
+      <a href="mailto:sdfad009900@gmail.com">sdfad009900@gmail.com</a>
+      <a onclick="showPage('contact')">Find Our Office</a>
+      <a href="https://wa.me/8866338111" target="_blank">WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 AQUA TECH RO · All Rights Reserved</div>
+</footer>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
