@@ -15,9 +15,11 @@ const DB = {
       badge: '',
       popular: 3,
       colors: [
-        { name: 'White',     hex: '#F5F5F5', image: 'images/product1.png' },
-        { name: 'Sky Blue',  hex: '#87CEEB', image: null },  // add: images/product1-skyblue.png
-        { name: 'Graphite',  hex: '#555F6E', image: null },  // add: images/product1-graphite.png
+        { name: 'Aqua Green', hex: '#10878b', image: 'images/product1.png' },
+        { name: 'Blue',  hex: '#87CEEB', image: 'images/jadeblue.png' }, 
+        { name: 'Grey',  hex: '#555F6E', image: 'images/jadegrey.png' },
+        { name: 'Comrade Blue',  hex: '#105c80', image: 'images/jadecomradeblue.png' },  
+        { name: 'Black',  hex: '#000000', image: 'images/jadeblack.png' }, 
       ],
       image: 'images/product1.png'
     },
@@ -37,8 +39,8 @@ const DB = {
       popular: 10,
       colors: [
         { name: 'Pearl White',    hex: '#F0EDE8', image: 'images/product2.png' },
-        { name: 'Midnight Black', hex: '#1C1C1E', image: null },  // add: images/product2-black.png
-        { name: 'Ocean Blue',     hex: '#1A6EA8', image: null },  // add: images/product2-blue.png
+        { name: 'Midnight Black', hex: '#1C1C1E', image: null },  
+        { name: 'Ocean Blue',     hex: '#1A6EA8', image: null },  
       ],
       image: 'images/product2.png'
     },
@@ -57,9 +59,11 @@ const DB = {
       badge: 'Popular',
       popular: 8,
       colors: [
-        { name: 'White',      hex: '#FFFFFF', image: 'images/product3.png' },
-        { name: 'Silver',     hex: '#C0C0C0', image: null },  
-        { name: 'Royal Blue', hex: '#1A4E8C', image: null },  
+        { name: 'Sangria Maroon',      hex: '#6c2121', image: 'images/product3.png' },
+        { name: 'Silky Silver',     hex: '#b5c9ca', image: 'images/v5silkysilver.png' },  
+        { name: 'Dark Magnesium Grey', hex: '#9d9d9e', image: 'images/v5darkmagnesiumgrey.png' },  
+        { name: 'Energy Blue', hex: '#316fba', image: 'images/v5energyblue.png' }, 
+        { name: 'Mirror Black', hex: '#000000', image: 'images/v5mirrorblack.png' }, 
       ],
       image: 'images/product3.png'
     },
@@ -80,7 +84,8 @@ const DB = {
       colors: [
         { name: 'Silk Blue',   hex: '#108edc', image: 'images/product4.png' },
         { name: 'Urban Grey',    hex: '#708090', image: 'images/color.png' },  
-        { name: 'Copper Bronze', hex: '#8C5A3C', image: null },  
+        { name: 'Pearl White', hex: '#ffffff', image: 'images/erapearlwhite.png' },  
+        { name: 'Forest Blue', hex: '#1668ba', image: 'images/eraforestblue.png' },
       ],
       image: 'images/product4.png'
     },
