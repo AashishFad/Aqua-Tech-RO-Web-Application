@@ -339,6 +339,7 @@ function showDetail(id) {
       <p style="color:var(--gray-600);margin-bottom:1.5rem;">${p.fullDesc || p.desc}</p>
       <table class="specs-table">
         <tr><td>Capacity</td><td>${p.capacity}</td></tr>
+        <tr><td>Water Storage</td><td>${p.water_storage}</td></tr>
         <tr><td>Technology</td><td>${p.tech}</td></tr>
         <tr><td>Purification Stages</td><td>${p.stages}</td></tr>
         <tr><td>Warranty</td><td>${p.warranty}</td></tr>
