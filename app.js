@@ -7,16 +7,19 @@ const DB = {
       originalPrice: 10499,
       tech: 'RO+UV+Copper',
       capacity: '10L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '6-stage',
       warranty: '1 Year',
       desc: 'Ideal for families having 4 to 5 Members.',
       fullDesc: 'Designed with advanced RO, UV, and Copper enrichment technology, this purifier effectively removes dissolved impurities, harmful bacteria, viruses, chlorine, heavy metals, and unpleasant odors while enhancing the water with the goodness of copper.',
       badge: '',
       popular: 3,
-      // ──────────────────────────────────────────────────
-    
-      image: 'images/product1.png' 
+      colors: [
+        { name: 'White',     hex: '#F5F5F5', image: 'images/product1.png' },
+        { name: 'Sky Blue',  hex: '#87CEEB', image: null },  // add: images/product1-skyblue.png
+        { name: 'Graphite',  hex: '#555F6E', image: null },  // add: images/product1-graphite.png
+      ],
+      image: 'images/product1.png'
     },
     {
       id: 2,
@@ -25,16 +28,19 @@ const DB = {
       originalPrice: 11499,
       tech: 'RO+UV+UF+Copper+Alkaline Water',
       capacity: '12L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '7-stage',
       warranty: '1 Year',
       desc: 'RO+UV dual purification with Copper which provides Alkaline Water.',
       fullDesc: 'Smart, Low-Maintenance Design Powered by advanced alkaline technology and featuring RO+UV+UF+Alkaline+Copper+Zinc+TDS Controller, the purifier guarantees 100% pure, mineral-rich, and healthy water with minimal maintenance.',
       badge: 'Best Seller',
       popular: 10,
-      // ──────────────────────────────────────────────────
-  
-      image: 'images/product2.png' // g'
+      colors: [
+        { name: 'Pearl White',    hex: '#F0EDE8', image: 'images/product2.png' },
+        { name: 'Midnight Black', hex: '#1C1C1E', image: null },  // add: images/product2-black.png
+        { name: 'Ocean Blue',     hex: '#1A6EA8', image: null },  // add: images/product2-blue.png
+      ],
+      image: 'images/product2.png'
     },
     {
       id: 3,
@@ -43,16 +49,19 @@ const DB = {
       originalPrice: 11499,
       tech: 'BIO+H2AAA(Copper, Alkaline & Zinc)',
       capacity: '12L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '7-stage',
       warranty: '1 Years',
       desc: '7-stage triple purification. LED TDS indicator with smart alerts.',
       fullDesc: 'Three-layer protection: BIO+H2AAA(Copper, Alkaline & Zinc) eliminates all types of contaminants. Smart LED display shows real-time TDS levels. Auto-flush, mineralizer, and 1-year comprehensive warranty included.',
       badge: 'Popular',
       popular: 8,
-    
-      // ──────────────────────────────────────────────────
-      image: 'images/product3.png' // e.g. 'images/products/product-3.jpg'
+      colors: [
+        { name: 'White',      hex: '#FFFFFF', image: 'images/product3.png' },
+        { name: 'Silver',     hex: '#C0C0C0', image: null },  
+        { name: 'Royal Blue', hex: '#1A4E8C', image: null },  
+      ],
+      image: 'images/product3.png'
     },
     {
       id: 4,
@@ -61,14 +70,18 @@ const DB = {
       originalPrice: 12499,
       tech: 'Copper+Alkaline+Zinc',
       capacity: '15L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '7-stage',
       warranty: '1 Years',
       desc: 'Large family purifier. 7-stage purification with high flow rate.',
       fullDesc: 'Built for larger families (6+ members), the purifier delivers 9 litres of stored pure water with a flow rate of 1.5 L/min. 7-stage includes copper+zinc+alkaline media for added minerals and health benefits.',
       badge: 'Best Seller',
       popular: 6,
-      // IMAGE PLACEHOLDER — Place at: images/products/product-4.jpg
+      colors: [
+        { name: 'Silk Blue',   hex: '#108edc', image: 'images/product4.png' },
+        { name: 'Urban Grey',    hex: '#708090', image: 'images/color.png' },  
+        { name: 'Copper Bronze', hex: '#8C5A3C', image: null },  
+      ],
       image: 'images/product4.png'
     },
     {
@@ -78,14 +91,18 @@ const DB = {
       originalPrice: 12499,
       tech: 'RO+Alkaline+Copper+Zinc',
       capacity: '15L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '7-stage',
       warranty: '1 Years',
       desc: 'Smart TDS controller. Auto-adjusts mineral levels for optimal taste.',
       fullDesc: 'The Elite TDS intelligently controls the TDS level of purified water with 9L stored water. Its proprietary TDS controller ensures minerals are retained at optimal levels (between 70-150 ppm) for best taste and health. 3-year warranty with 1 free AMC.',
       badge: 'New',
       popular: 7,
-      
+      colors: [
+        { name: 'Arctic White', hex: '#F8FAFB', image: 'images/product5.png' },
+        { name: 'Teal',         hex: '#0D9E88', image: null },  
+        { name: 'Charcoal',     hex: '#36454F', image: null },  
+      ],
       image: 'images/product5.png'
     },
     {
@@ -95,14 +112,18 @@ const DB = {
       originalPrice: 13799,
       tech: 'RO+UF+Alkaline+Copper+Zinc',
       capacity: '12L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '7-stage',
       warranty: '1 Years',
       desc: '7-stage purification with copper-infused water for health benefits.',
       fullDesc: 'Our flagship Copper model infuses purified water with trace amounts of copper using a proprietary process. 7 stages include a copper chamber, and post-mineral cartridge.',
       badge: 'Popular',
       popular: 5,
-  
+      colors: [
+        { name: 'White',     hex: '#FFFFFF', image: 'images/product6.png' },
+        { name: 'Rose Gold', hex: '#B76E79', image: null },  
+        { name: 'Navy Blue', hex: '#1B3A6B', image: null },  
+      ],
       image: 'images/product6.png'
     },
     {
@@ -112,14 +133,18 @@ const DB = {
       originalPrice: 14499,
       tech: 'RO+UF+Alkaline+Copper+Zinc',
       capacity: '15L',
-      water_storage: '9L',
+      waterstorage: '9L',
       stages: '7-stage',
       warranty: '1 Years',
       desc: 'Our most advanced model. 7-stage purification for borewell & hard water.',
       fullDesc: 'The ultimate purification machine for hard water areas and borewells. 7-stage process includes scale inhibitor, and alkaline cartridge. Also includes massive 15L capacity.',
       badge: 'Premium',
       popular: 4,
-      
+      colors: [
+        { name: 'Pearl White',   hex: '#F5F0EB', image: 'images/product7.png' },
+        { name: 'Metallic Grey', hex: '#A8B2BD', image: null },  
+        { name: 'Matte Black',   hex: '#2C2C2C', image: null },  
+      ],
       image: 'images/product7.png'
     },
     {
@@ -129,14 +154,18 @@ const DB = {
       originalPrice: 15499,
       tech: 'RO+UF+Alkaline+Zinc+Minerals+TDS',
       capacity: '15L',
-      water_storage: '14L',
+      waterstorage: '14L',
       stages: '8-stage',
       warranty: '1 Year',
       desc: 'Premium looking 8 stage verification heavy body water purifier.',
       fullDesc: 'Massive capacity of 15L with excellent build quality and huge water storage of 14L with Zinc and minerals and attractive Premium Metallic Grey colour.',
       badge: 'Premium',
       popular: 6,
-      
+      colors: [
+        { name: 'Metallic Grey',   hex: '#A8B2BD', image: 'images/product8.png' },
+        { name: 'Champagne Gold',  hex: '#C5A55A', image: null },  
+        { name: 'Matte Black',     hex: '#2C2C2C', image: null },  
+      ],
       image: 'images/product8.png'
     },
   ],
@@ -165,6 +194,34 @@ let editingProductId = null;
 let wizardAnswers = {};
 
 
+
+function selectColor(el, productId, colorName, colorImage) {
+  // Highlight the selected swatch
+  const container = el.closest('.color-swatches');
+  if (container) container.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('selected'));
+  el.classList.add('selected');
+
+  // Update color name label
+  const display = document.getElementById('color-name-' + productId);
+  if (display) display.textContent = colorName;
+
+  // Swap the product image if a color-specific image is provided
+  if (colorImage) {
+    // In product cards, the image is inside .product-img img
+    const card = el.closest('.product-card');
+    if (card) {
+      const img = card.querySelector('.product-img img');
+      if (img) img.src = colorImage;
+    }
+    // In detail page, the image is inside .product-detail-img img
+    const detail = el.closest('.product-detail-info');
+    if (detail) {
+      // detail image sits in the sibling .product-detail-img column
+      const detailImgWrap = document.querySelector('.product-detail-img img');
+      if (detailImgWrap) detailImgWrap.src = colorImage;
+    }
+  }
+}
 
 //  PAGE NAVIGATION
 
@@ -222,6 +279,14 @@ function productCardHTML(p, showCompare = true) {
         <span class="spec-tag">${p.capacity}</span>
         <span class="spec-tag">${p.stages}</span>
       </div>
+      ${p.colors && p.colors.length ? `
+      <div class="color-options">
+        <div class="color-options-label">Colors:</div>
+        <div class="color-swatches">
+          ${p.colors.map((c, i) => `<span class="color-swatch${i === 0 ? ' selected' : ''}${!c.image ? ' no-image' : ''}" style="background:${c.hex};" title="${c.name}${!c.image ? ' (image coming soon)' : ''}" onclick="event.stopPropagation();selectColor(this,'${p.id}','${c.name}',${c.image ? `'${c.image}'` : 'null'})"></span>`).join('')}
+        </div>
+        <div class="color-name-display" id="color-name-${p.id}">${p.colors[0].name}</div>
+      </div>` : ''}
       <div>
         <span class="product-price">₹${p.price.toLocaleString('en-IN')}</span>
         ${p.originalPrice ? `<span class="product-price-old">₹${p.originalPrice.toLocaleString('en-IN')}</span>` : ''}
@@ -339,7 +404,7 @@ function showDetail(id) {
       <p style="color:var(--gray-600);margin-bottom:1.5rem;">${p.fullDesc || p.desc}</p>
       <table class="specs-table">
         <tr><td>Capacity</td><td>${p.capacity}</td></tr>
-        <tr><td>Water Storage</td><td>${p.water_storage}</td></tr>
+        <tr><td>Water Storage</td><td>${p.waterstorage}</td></tr>
         <tr><td>Technology</td><td>${p.tech}</td></tr>
         <tr><td>Purification Stages</td><td>${p.stages}</td></tr>
         <tr><td>Warranty</td><td>${p.warranty}</td></tr>
@@ -347,6 +412,14 @@ function showDetail(id) {
         <tr><td>Power Consumption</td><td>24W</td></tr>
         <tr><td>Installation</td><td>Installation Charges depends on customer location</td></tr>
       </table>
+      ${p.colors && p.colors.length ? `
+      <div class="color-options color-options-detail">
+        <div class="color-options-label">Available Colors:</div>
+        <div class="color-swatches">
+          ${p.colors.map((c, i) => `<span class="color-swatch color-swatch-lg${i === 0 ? ' selected' : ''}${!c.image ? ' no-image' : ''}" style="background:${c.hex};" title="${c.name}${!c.image ? ' (image coming soon)' : ''}" onclick="selectColor(this,'${p.id}-detail','${c.name}',${c.image ? `'${c.image}'` : 'null'})"></span>`).join('')}
+        </div>
+        <div class="color-name-display" id="color-name-${p.id}-detail">${p.colors[0].name}</div>
+      </div>` : ''}
       <div class="detail-btns">
         <button class="btn btn-primary" onclick="enquireProduct('${p.name}')">📋 Enquire Now</button>
         <a class="btn btn-green" href="https://wa.me/8866338111?text=Hi%20AQUA TECH RO!%20I%20am%20interested%20in%20${encodeURIComponent(p.name)}.%20Please%20provide%20more%20details." target="_blank">💬 WhatsApp</a>
@@ -685,7 +758,7 @@ function toggleProductForm() {
   if (!form.classList.contains('visible')) {
     editingProductId = null;
     document.getElementById('product-form-title').textContent = 'Add New Product';
-    ['pf-name', 'pf-price', 'pf-original-price', 'pf-stages', 'pf-warranty', 'pf-desc', 'pf-full-desc'].forEach(id => document.getElementById(id).value = '');
+    ['pf-name', 'pf-price', 'pf-original-price', 'pf-stages', 'pf-warranty', 'pf-desc', 'pf-full-desc', 'pf-colors'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
   }
 }
 
@@ -704,11 +777,24 @@ function editProduct(id) {
   document.getElementById('pf-badge').value = p.badge || '';
   document.getElementById('pf-desc').value = p.desc;
   document.getElementById('pf-full-desc').value = p.fullDesc || '';
+  if (document.getElementById('pf-colors')) {
+    document.getElementById('pf-colors').value = (p.colors || []).map(c => c.name).join(', ');
+  }
   document.getElementById('product-form').classList.add('visible');
   document.getElementById('product-form').scrollIntoView({ behavior: 'smooth' });
 }
 
 function saveProduct() {
+  const colorsRaw = document.getElementById('pf-colors')?.value || '';
+  const colors = colorsRaw.split(',').map(s => s.trim()).filter(Boolean).map(name => {
+    const colorMap = {
+      'white': '#FFFFFF', 'black': '#2C2C2C', 'grey': '#A8B2BD', 'gray': '#A8B2BD',
+      'blue': '#1A6EA8', 'red': '#C0392B', 'silver': '#C0C0C0', 'gold': '#C5A55A',
+      'teal': '#0D9E88', 'copper': '#8C5A3C', 'rose gold': '#B76E79',
+    };
+    const hex = colorMap[name.toLowerCase()] || '#AAAAAA';
+    return { name, hex };
+  });
   const data = {
     name: document.getElementById('pf-name').value,
     price: parseInt(document.getElementById('pf-price').value),
@@ -720,6 +806,7 @@ function saveProduct() {
     badge: document.getElementById('pf-badge').value,
     desc: document.getElementById('pf-desc').value,
     fullDesc: document.getElementById('pf-full-desc').value,
+    colors: colors.length ? colors : [{ name: 'White', hex: '#FFFFFF' }],
     popular: 5,
     image: '', // Set image path here after adding to images/products/
   };
