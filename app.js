@@ -104,9 +104,11 @@ const DB = {
       badge: 'New',
       popular: 7,
       colors: [
-        { name: 'Arctic White', hex: '#F8FAFB', image: 'images/product5.png' },
-        { name: 'Teal',         hex: '#0D9E88', image: null },  
-        { name: 'Charcoal',     hex: '#36454F', image: null },  
+        { name: 'Ruby Pink', hex: '#fbc6f1', image: 'images/product5.png' },
+        { name: 'Daytona Silver',   hex: '#ccd4d3', image: 'images/2090daytonasilver.png' },  
+        { name: 'Heritage Gold', hex: '#e6c044', image: 'images/2090heritagegold.png' }, 
+        { name: 'Rolex Green',  hex: '#80de6f', image: 'images/2090rolexgreen.png' }, 
+        { name: 'Sierra Blue',  hex: '#5ab3ef', image: 'images/2090sierrablue.png' },   
       ],
       image: 'images/product5.png'
     },
@@ -125,15 +127,15 @@ const DB = {
       badge: 'Popular',
       popular: 5,
       colors: [
-        { name: 'White',     hex: '#FFFFFF', image: 'images/product6.png' },
-        { name: 'Rose Gold', hex: '#B76E79', image: null },  
-        { name: 'Navy Blue', hex: '#1B3A6B', image: null },  
+        { name: 'Matt Black',     hex: '#000000', image: 'images/product6.png' },
+        { name: 'Apple White', hex: '#ffffff', image: 'images/purosisapplewhite.png' },  
+        { name: 'Matt Grey', hex: '#9a9ea5', image: 'images/purosismattgrey.png' },  
       ],
       image: 'images/product6.png'
     },
     {
       id: 7,
-      name: 'Aqua Purosis Water Purifier (Pureaqua)',
+      name: 'Aqua Purosis Water Purifier (Puroaqua)',
       price: 12499,
       originalPrice: 14499,
       tech: 'RO+UF+Alkaline+Copper+Zinc',
@@ -146,9 +148,10 @@ const DB = {
       badge: 'Premium',
       popular: 4,
       colors: [
-        { name: 'Pearl White',   hex: '#F5F0EB', image: 'images/product7.png' },
-        { name: 'Metallic Grey', hex: '#A8B2BD', image: null },  
-        { name: 'Matte Black',   hex: '#2C2C2C', image: null },  
+        { name: 'Puro Pink',   hex: '#dc86c9', image: 'images/product7.png' },
+        { name: 'Ocean Blue', hex: '#7aa9db', image: 'images/oceanblue.png' },  
+        { name: 'Copper Gold',   hex: '#df7919', image: 'images/coppergold.png'},  
+        { name: 'Spiritual Gold',   hex: '#e29955', image: 'images/spiritualgold.png'},
       ],
       image: 'images/product7.png'
     },
@@ -167,9 +170,10 @@ const DB = {
       badge: 'Premium',
       popular: 6,
       colors: [
-        { name: 'Metallic Grey',   hex: '#A8B2BD', image: 'images/product8.png' },
-        { name: 'Champagne Gold',  hex: '#C5A55A', image: null },  
-        { name: 'Matte Black',     hex: '#2C2C2C', image: null },  
+        { name: 'Matt Grey',   hex: '#A8B2BD', image: 'images/product8.png' },
+        { name: 'Ocean Blue Clarity',  hex: '#b8eef7', image: 'images/oceanblueclarity.png' },  
+        { name: 'Matt Black',     hex: '#2C2C2C', image: 'images/mattblack.png' },  
+        { name: 'Sea Green Tradition',     hex: '#148945', image: 'images/seagreentradition.png' }, 
       ],
       image: 'images/product8.png'
     },
