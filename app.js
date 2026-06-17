@@ -38,11 +38,10 @@ const DB = {
       badge: 'Best Seller',
       popular: 10,
       colors: [
-        { name: 'Pearl White',    hex: '#F0EDE8', image: 'images/product2.png' },
-        { name: 'Midnight Black', hex: '#1C1C1E', image: null },  
-        { name: 'Ocean Blue',     hex: '#1A6EA8', image: null },  
+        { name: 'White',    hex: '#ffffff', image: 'images/zuricwhite.png' },
+        { name: 'Black', hex: '#000000', image: 'images/zuricblack.png' },    
       ],
-      image: 'images/product2.png'
+      image: 'images/zuricwhite.png'
     },
     {
       id: 3,
